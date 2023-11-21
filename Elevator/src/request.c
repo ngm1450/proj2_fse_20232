@@ -12,9 +12,9 @@ volatile int btn_data[11];
 volatile int encoder_data;
 volatile int pwm_data = 0;
 volatile float temp_data = 0.0;
-volatile char state[] = "Init";
+volatile char state[] = "init";
 volatile int stop = 0;
-volatile char location[] = "Terreo";
+volatile char location[] = "terreo";
 
 pthread_mutex_t data_mutex = PTHREAD_MUTEX_INITIALIZER;
 
