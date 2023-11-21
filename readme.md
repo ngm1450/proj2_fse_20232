@@ -32,5 +32,5 @@ make clean
 
 # Vídeos
 
-<a href="https://www.youtube.com/watch?v=FieWaT5s1zc" target="_blank">Demonstração</a>
+<a href="https://www.youtube.com/watch?v=FieWaT5s1zc" target="_blank" style="text-decoration: none;">Demonstração</a>
 
