@@ -140,6 +140,7 @@ void *monitorButtons(void *arg) {
     while (1) {
         pthread_mutex_lock(&btn_mutex);
         for (int floor = 0; floor < NUM_FLOORS; ++floor) {
+            if(btn_data[floor]>1) break;
             if (btn_data[floor] == 1) {
                 enqueue(floor);
             }

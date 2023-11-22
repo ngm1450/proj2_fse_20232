@@ -183,10 +183,6 @@ int *processReceivedData(unsigned char *rx_data) {
 
 int validateResponse(unsigned char* response, int size){
 
-    if(response[1]==0x03){
-        return 1;
-    }
-
     short receivedCrc = (response[size - 1] << 8) | response[size - 2];
     short crc = calcula_CRC(response, size - 2);
     
